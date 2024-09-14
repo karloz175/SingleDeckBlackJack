@@ -47,4 +47,11 @@ public class MoneyManagement {
         setCasinoMoney(getCasinoMoney() + wonMoney);
     }
 
+    public boolean canPlayerPlay(){
+        if(getGuestMoney() == 0){
+            return false;
+        }else{
+            return true;
+        }
+    }
 }
